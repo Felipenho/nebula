@@ -22,12 +22,3 @@ steps:
       name: my-git-repo
       branch: dev
       repository: git@github.com:Felipenho/nebula.git
-- name: msteams-notification
-  image: projectnebula/msteams-notification:latest
-  spec:
-    message: "Instância EC2 Criada com sucesso!"
-    webhookURL:
-      $type: Secret
-      name: hookurl
-  dependsOn:
-    - echo
