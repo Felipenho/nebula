@@ -20,5 +20,5 @@ steps:
         $type: Secret
         name: known_hosts
       name: my-git-repo
-      branch: dev
+      branch: master
       repository: git@github.com:Felipenho/nebula.git
