@@ -1,5 +1,5 @@
 version: v1
-description: Initiating the deployment
+description: Creating EC2 Instance
 
 steps:
 - name: terraform

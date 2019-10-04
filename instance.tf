@@ -1,6 +1,5 @@
 provider "aws" {
     region = "sa-east-1"
-    shared_credentials_file = "C:/users/luiz.siqueira.CSPDOMAIN/Desktop/TerraformBuilds/AWS/credentials"
     profile = "terraform"
 }
 
