@@ -14,7 +14,7 @@ steps:
   spec:
     message: "Você recebeu uma notificação do Projeto Nebula!"
     webhookURL:
-    $type: Secret
-    name: hookurl
+      $type: Secret
+      name: hookurl
   dependsOn:
     - echo
