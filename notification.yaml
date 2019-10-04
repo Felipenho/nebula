@@ -10,7 +10,7 @@ steps:
   spec:
     hello: world
 - name: msteams-notification
-  image: projectnebula/msteams-notification:7bc90d8
+  image: projectnebula/msteams-notification:latest
   spec:
     message: "Você recebeu uma notificação do Projeto Nebula!"
     webhookURL:
