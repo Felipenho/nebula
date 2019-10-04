@@ -10,7 +10,7 @@ steps:
       credentials: 
         $type: Secret
         name: credentials
-    workspace: my_workspace
+    workspace: padrao
     directory: infra/app    
     git: 
       ssh_key:
@@ -21,4 +21,13 @@ steps:
         name: known_hosts
       name: my-git-repo
       branch: dev
-      repository: path/to/your/repo
+      repository: git@github.com:Felipenho/nebula.git
+- name: msteams-notification
+  image: projectnebula/msteams-notification:latest
+  spec:
+    message: "Instância EC2 Criada com sucesso!"
+    webhookURL:
+      $type: Secret
+      name: hookurl
+  dependsOn:
+    - echo
