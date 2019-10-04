@@ -10,8 +10,8 @@ steps:
       credentials: 
         $type: Secret
         name: credentials
-    workspace: padrao
-    directory: infra/app    
+    workspace: default
+    directory: default    
     git: 
       ssh_key:
         $type: Secret
@@ -19,6 +19,6 @@ steps:
       known_hosts:
         $type: Secret
         name: known_hosts
-      name: my-git-repo
+      name: nebula
       branch: master
       repository: git@github.com:Felipenho/nebula.git
