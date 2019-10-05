@@ -11,7 +11,7 @@ steps:
         $type: Secret
         name: credentials
     workspace: builds
-    directory: terraform-builds/instance.tf
+    directory: builds/instance.tf
     git: 
       ssh_key:
         $type: Secret
