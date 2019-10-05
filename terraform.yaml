@@ -10,8 +10,8 @@ steps:
       credentials: 
         $type: Secret
         name: credentials
-    workspace: terraform-builds
-    directory: nebula/terraform-builds    
+    workspace: builds
+    directory: terraform-builds/instance.tf
     git: 
       ssh_key:
         $type: Secret
