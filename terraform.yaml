@@ -10,7 +10,7 @@ steps:
       credentials: 
         $type: Secret
         name: credentials
-    workspace: defaul
+    workspace: default
     directory: terraform-builds    
     git: 
       ssh_key:
