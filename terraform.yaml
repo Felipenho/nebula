@@ -10,8 +10,8 @@ steps:
       credentials: 
         $type: Secret
         name: credentials
-    workspace: default
-    directory: default    
+    workspace: defaul
+    directory: terraform-builds    
     git: 
       ssh_key:
         $type: Secret
@@ -19,6 +19,6 @@ steps:
       known_hosts:
         $type: Secret
         name: known_hosts
-      name: nebula
+      name: default
       branch: master
       repository: git@github.com:Felipenho/nebula.git
