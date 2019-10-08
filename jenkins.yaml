@@ -9,11 +9,7 @@ steps:
       token: 
         $type: Secret
         name: token
-    newJob: testing
-    parameters: 
-      HOST: web2
-      VERSION: 287
-      DB_UPDATE: true
+    job: HML - Deploy Linka
     queueOptions:
       waitFor: downstreams
       timeoutSeconds: 5000
