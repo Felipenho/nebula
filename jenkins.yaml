@@ -9,6 +9,12 @@ steps:
       token: 
         $type: Secret
         name: token
-    job: ParameterBuild
+    newJob: testing
     parameters: 
-      cmd: echo
+      HOST: web2
+      VERSION: 287
+      DB_UPDATE: true
+    queueOptions:
+      waitFor: downstreams
+      timeoutSeconds: 5000
+      cancelOnTimeout: false
