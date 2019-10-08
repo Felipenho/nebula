@@ -5,7 +5,7 @@ steps:
     masterURL: http://dev-001.cspconsultoria.com.br:8080/
     credentials: 
       method: http
-      user: jenkins
+      user: luiz
       token: 
         $type: Secret
         name: token
