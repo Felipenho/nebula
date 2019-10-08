@@ -9,7 +9,7 @@ steps:
       token: 
         $type: Secret
         name: token
-    job: my-jenkins-job
+    jobId: testing
     parameters: 
       HOST: web2
       VERSION: 287
