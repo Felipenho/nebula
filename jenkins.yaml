@@ -2,7 +2,7 @@ steps:
 - name: jenkins
   image: projectnebula/jenkins-job-runner:latest
   spec:
-    masterURL: http://dev-001.cspconsultoria.co.br:8080/
+    masterURL: http://dev-001.cspconsultoria.com.br:8080/
     credentials: 
       method: http
       user: jenkins
