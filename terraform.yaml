@@ -3,7 +3,7 @@ description: Creating EC2 Instance
 
 steps:
 - name: terraform
-  image: projectnebula/terraform:7bc90d8
+  image: projectnebula/terraform:latest
   spec:
     provider: aws
     credentials:
