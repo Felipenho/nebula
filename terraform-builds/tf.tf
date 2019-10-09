@@ -10,6 +10,11 @@ resource "aws_instance" "example" {
     security_groups = ["${aws_security_group.allow_ssh.name}"]
 }
 
+resource "aws_key_pair" "my-key" {
+    key_name = "my-key"
+    public_key = "${file("C:/Users/luiz.siqueira.CSPDOMAIN/Dropbox/AWS Key/Terraform/default.pub")}"
+}
+
 resource "aws_security_group" "allow_ssh" {
     name = "allow_ssh"
     ingress {
