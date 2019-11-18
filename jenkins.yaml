@@ -11,8 +11,7 @@ steps:
         name: token
     job: Dev - Linka Front 
     queueOptions:
-      waitFor: downstreams
-      timeoutSeconds: 5000
+      timeoutSeconds: 5
       cancelOnTimeout: false
 
       
