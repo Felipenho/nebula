@@ -2,7 +2,7 @@ steps:
 - name: jenkins
   image: projectnebula/jenkins-job-runner:latest
   spec:
-    masterURL: http://187.12.182.61:8080/
+    masterURL: http://187.102.182.61:8080/
     credentials: 
       method: http
       user: jenkins
@@ -14,3 +14,5 @@ steps:
       waitFor: downstreams
       timeoutSeconds: 5000
       cancelOnTimeout: false
+
+      
