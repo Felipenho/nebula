@@ -9,9 +9,7 @@ steps:
       token: 
         $type: Secret
         name: token
-    job: Dev - Linka Front 
+    job: Dev_Linka-Front
     queueOptions:
       timeoutSeconds: 5
       cancelOnTimeout: false
-
-      
