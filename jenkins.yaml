@@ -1,6 +1,6 @@
 steps:
 - name: jenkins
-  image: projectnebula/jenkins-job-runner:latest
+  image: projectnebula/jenkins-job-runner:11e8d5f
   spec:
     masterURL: http://187.102.182.61:8080/
     credentials: 
@@ -9,7 +9,8 @@ steps:
       token: 
         $type: Secret
         name: token
-    job: Dev_Linka-Front
+    job: Dev_Linka-Back
     queueOptions:
-      waitFor: build
+      waitFor: none
+      timetoutSeconds: 3600
       cancelOnTimeout: false
