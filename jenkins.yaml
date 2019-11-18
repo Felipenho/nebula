@@ -12,5 +12,5 @@ steps:
     job: Dev_Linka-Front
     queueOptions:
       waitFor: build
-      timeoutSeconds: 5
+      timeoutSeconds: 3600
       cancelOnTimeout: false
