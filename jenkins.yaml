@@ -9,7 +9,7 @@ steps:
       token: 
         $type: Secret
         name: token
-    job: Dev - Linka Back 
+    job: Dev - Linka Front 
     queueOptions:
       waitFor: downstreams
       timeoutSeconds: 5000
