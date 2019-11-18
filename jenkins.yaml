@@ -11,5 +11,6 @@ steps:
         name: token
     job: Dev_Linka-Front
     queueOptions:
+      waitFor: build
       timeoutSeconds: 5
       cancelOnTimeout: false
