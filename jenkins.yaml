@@ -11,6 +11,6 @@ steps:
         name: token
     job: Dev_Linka-Back
     queueOptions:
-      waitFor: none
+      waitFor: downstreams
       timetoutSeconds: 3600
       cancelOnTimeout: false
