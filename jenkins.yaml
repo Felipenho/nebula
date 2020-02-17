@@ -2,14 +2,14 @@ steps:
 - name: jenkins
   image: projectnebula/jenkins-job-runner:latest
   spec:
-    masterURL: http://homologacao.cspconsultoria.com.br/
+    masterURL: http://homologacao.cspconsultoria.com.br:8080/
     credentials: 
       method: http
       user: jenkins
       token: 
         $type: Secret
         name: token
-    job: HML_Linka-Back_Pipeline
+    job: HML_Linka-Back
     queueOptions:
       waitFor: downstreams
       timetoutSeconds: 3600
